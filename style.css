@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background-color: #ffffff;
+    color: #111112;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.media-main {
+    min-height: 760px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 1px minmax(380px, 1fr);
+    column-gap: 70px;
+    align-items: center;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.instagram-logo {
+    width: 76px;
+    height: 76px;
+    object-fit: contain;
+    margin-bottom: 35px;
+}
+
+.intro-text h1 {
+    margin: 0;
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.heading {
+    margin-top: 8px !important;
+    background: linear-gradient(to right, #ff5a15, #ff4023, #f4017f, #e6029d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.insta {
+    width: min(100%, 500px);
+    height: auto;
+    margin-top: 45px;
+    object-fit: contain;
+}
+
+/* Vertical line between left image section and login form */
+.vertical-divider {
+    width: 1px;
+    height: 620px;
+    background-color: #dfe2e5;
+    align-self: center;
+}
+
+.login-section {
+    width: 100%;
+    max-width: 546px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.into {
+    margin: 0 0 28px;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+#loginForm {
+    width: 100%;
+}
+
+.username,
+.password {
+    width: 100%;
+    height: 60px;
+    border: 2px solid #dfe2e5;
+    border-radius: 20px;
+    padding: 0 18px;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.username {
+    margin-bottom: 18px;
+}
+
+.username:hover,
+.password:hover {
+    border-color: #111112;
+}
+
+.username:focus,
+.password:focus {
+    border-color: #0064e0;
+    box-shadow: 0 0 0 3px rgba(0, 100, 224, 0.15);
+}
+
+.password-container {
+    position: relative;
+}
+
+.password {
+    padding-right: 60px;
+}
+
+#togglePassword {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: #555;
+    cursor: pointer;
+}
+
+#togglePassword:focus-visible {
+    outline: 2px solid #0064e0;
+    border-radius: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+.login,
+.face,
+.account {
+    width: 100%;
+    min-height: 54px;
+    border-radius: 999px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login {
+    margin-top: 28px;
+    border: none;
+    background-color: #0064e0;
+    color: #ffffff;
+}
+
+.login:hover {
+    background-color: #0056c1;
+}
+
+.forgetpass {
+    width: fit-content;
+    margin: 20px auto 0;
+    color: #111112;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.forgetpass:hover {
+    text-decoration: underline;
+}
+
+.face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+    border: 2px solid #dfe2e5;
+    background-color: #ffffff;
+    color: #111112;
+}
+
+.face:hover {
+    background-color: #f3f4f5;
+}
+
+.fac {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.account {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #0064e0;
+    color: #0064e0;
+    text-decoration: none;
+}
+
+.account:hover {
+    background-color: #f3f4f5;
+}
+
+.meta {
+    width: 50px;
+    height: auto;
+    margin: 34px auto 0;
+    object-fit: contain;
+}
+
+hr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+.media-footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.foot1 ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.foot1 a {
+    color: #737373;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.foot1 a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 24px;
+    color: #737373;
+    font-size: 0.85rem;
+}
+
+.footer-bottom select {
+    border: none;
+    background: transparent;
+    color: #737373;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    .media-main {
+        padding: 70px 80px;
+        column-gap: 80px;
+    }
+}
+
+/* Laptop and tablet: hide left image section and divider */
+@media (max-width: 991px) {
+    .media-main {
+        min-height: auto;
+        padding: 60px 30px 70px;
+        display: block;
+    }
+
+    .intro-section,
+    .vertical-divider {
+        display: none;
+    }
+
+    .login-section {
+        max-width: 546px;
+        margin: 0 auto;
+    }
+}
+
+/* Small tablets */
+@media (max-width: 767px) {
+    .media-main {
+        padding: 45px 24px 60px;
+    }
+
+    .login-section {
+        max-width: 520px;
+    }
+
+    .into {
+        font-size: 1.25rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+    .media-main {
+        padding: 35px 18px 55px;
+    }
+
+    .into {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+
+    .username,
+    .password {
+        height: 54px;
+        border-radius: 16px;
+        font-size: 1rem;
+    }
+
+    .login,
+    .face,
+    .account {
+        min-height: 50px;
+        font-size: 1rem;
+    }
+
+    .face {
+        margin-top: 38px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .foot1 ul {
+        gap: 7px 10px;
+    }
+
+    .foot1 a,
+    .footer-bottom {
+        font-size: 0.75rem;
+    }
+}
+
+/* Very small mobile devices */
+@media (max-width: 375px) {
+    .media-main {
+        padding: 28px 14px 45px;
+    }
+
+    .username,
+    .password {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .password {
+        padding-right: 52px;
+    }
+
+    #togglePassword {
+        right: 14px;
+    }
+
+    .media-footer {
+        padding: 25px 14px;
+    }
+}

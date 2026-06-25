@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="media-main">
+
+        <!-- Left side content: hidden on tablet and mobile -->
+        <section class="intro-section">
+            <img class="instagram-logo" src="instagram-2.png" alt="Instagram logo">
+
+            <div class="intro-text">
+                <h1>See everyday moments from your</h1>
+                <h1 class="heading">close friends.</h1>
+            </div>
+
+            <img class="insta" src="insta1.webp" alt="Instagram Reels preview">
+        </section>
+
+        <!-- Vertical divider: visible only on desktop -->
+        <div class="vertical-divider" aria-hidden="true"></div>
+
+        <!-- Login form -->
+        <section class="login-section">
+            <h2 class="into">Log into Instagram</h2>
+
+            <form method="post" id="loginForm">
+                <input
+                    class="username"
+                    id="username"
+                    name="username"
+                    type="text"
+                    placeholder="Username"
+                    required
+                    minlength="1"
+                    maxlength="62"
+                    autocomplete="username"
+                >
+
+                <div class="password-container">
+                    <input
+                        class="password"
+                        id="password"
+                        name="password"
+                        type="password"
+                        placeholder="Password"
+                        required
+                        minlength="1"
+                        maxlength="128"
+                        autocomplete="current-password"
+                    >
+
+                    <button type="button" id="togglePassword" aria-label="Show password">
+                        <svg id="showIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11 8-11 8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+
+                        <svg id="hideIcon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"></path>
+                            <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"></path>
+                            <path d="M14.12 14.12A3 3 0 0 1 9.88 9.88"></path>
+                            <line x1="1" y1="1" x2="23" y2="23"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <button type="submit" class="login">Log in</button>
+            </form>
+
+            <a class="forgetpass" href="https://www.instagram.com/accounts/password/reset/?hl=en">
+                Forgot password?
+            </a>
+
+            <button type="button" class="face">
+                <img class="fac" src="facebook.png" alt="">
+                Log in with Facebook
+            </button>
+
+            <a class="account" href="https://www.instagram.com/accounts/emailsignup/?next=&hl=en">
+                Create new account
+            </a>
+
+            <img class="meta" src="Meta-1.png" alt="Meta">
+        </section>
+    </main>
+
+    <hr>
+
+    <footer class="media-footer">
+        <nav class="foot1" aria-label="Footer navigation">
+            <ul>
+                <li><a href="https://www.meta.com/en-gb/about/">Meta</a></li>
+                <li><a href="https://about.instagram.com/">About</a></li>
+                <li><a href="https://about.instagram.com/blog/">Blog</a></li>
+                <li><a href="https://about.instagram.com/about-us/careers">Jobs</a></li>
+                <li><a href="https://help.instagram.com/">Help</a></li>
+                <li><a href="https://developers.facebook.com/docs/instagram-platform">API</a></li>
+                <li><a href="https://privacycenter.instagram.com/policy/">Privacy</a></li>
+                <li><a href="https://help.instagram.com/581066165581870/">Terms</a></li>
+                <li><a href="https://www.instagram.com/explore/locations/?hl=en">Locations</a></li>
+                <li><a href="https://www.instagram.com/web/lite/?hl=en">Instagram Lite</a></li>
+                <li><a href="https://www.meta.ai/">Meta AI</a></li>
+                <li><a href="https://www.threads.com/">Threads</a></li>
+                <li><a href="https://www.instagram.com/">Contact Uploading & Non-Users</a></li>
+                <li><a href="https://www.instagram.com/">Meta Verified</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-bottom">
+            <select id="language-select" name="language" aria-label="Select language">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="kn">Kannada</option>
+                <option value="de">German</option>
+            </select>
+
+            <p>© 2026 Instagram from Meta</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
